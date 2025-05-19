@@ -1,7 +1,8 @@
-import { Component, createSignal } from "solid-js";
 import { AiOutlineMessage } from "solid-icons/ai";
 import { FiTrash } from "solid-icons/fi";
 import { FaRegularHeart } from "solid-icons/fa";
+import { Component } from "solid-js";
+
 import { Glide } from "../../types/Glide";
 
 

@@ -1,11 +1,8 @@
-import { CgProfile, CgMoreO } from "solid-icons/cg";
-import { IoNotificationsCircleOutline } from "solid-icons/io";
-import { RiMapCompassDiscoverLine } from "solid-icons/ri";
-import { AiOutlineHome } from "solid-icons/ai";
-import { FiMoreHorizontal } from "solid-icons/fi";
-import { links } from "./links";
 import { For } from "solid-js";
 import { A } from "@solidjs/router";
+import { FiMoreHorizontal } from "solid-icons/fi";
+
+import { links } from "./links";
 import Popup from "../utils/Popup";
 
 const MainSidebar = () => {
@@ -17,7 +14,7 @@ const MainSidebar = () => {
             <div class="flex-it items-start">
               <div class="p-3 pt-4 xl:pb-3 pb-0 xl:text-2xl text-sm font-bold transition duration-200 hover:opacity-80">
                 <a href="#">
-                  <h1>Glider</h1>
+                  <h1>Zangi</h1>
                 </a>
               </div>
               <div class="my-1 w-full flex-it">
