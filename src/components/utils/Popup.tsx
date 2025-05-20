@@ -1,5 +1,6 @@
 import { Component, createEffect, createSignal, Show, onMount, onCleanup } from "solid-js";
 import { Portal } from "solid-js/web";
+import pageSize from "../../reactive/pageSize";
 
 type Props = {
   opener: Component;
@@ -23,7 +24,7 @@ const Popup: Component<Props> = ({ opener: Opener }) => {
   })
 
   createEffect(() => {
-    if (isOpen()) {
+    if (isOpen() && pageSize.value()) {
       adjustPopup();
     }
   })

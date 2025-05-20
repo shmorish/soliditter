@@ -3,22 +3,11 @@ import { FaRegularImage } from "solid-icons/fa";
 import MainLayout from "../components/layouts/Main";
 import GlidePost from "../components/glides/GlidePost";
 import { Glide } from "../types/Glide";
-import { createEffect } from "solid-js";
-import pageSize from "../reactive/pageSize";
-
 
 
 const HomeScreen: Component = () => {
   const [content, setContent] = createSignal("");
   const [glides, setGlides] = createSignal<Glide[]>([]);
-
-
-  // const testValue = pageSize();
-  // console.log(testValue);
-
-  createEffect(() => {
-    // console.log(glides().length)
-  })
 
   const createGlide = () => {
     const glide = {
@@ -74,7 +63,7 @@ const HomeScreen: Component = () => {
             <div class="flex-it w-32 mt-3 cursor-pointer">
               <button
                 onClick={createGlide}
-                disabled={content().trim() === ""}
+                // disabled={content().trim() === ""}
                 type="button"
                 class="
                             disabled:cursor-not-allowed disabled:bg-gray-400
